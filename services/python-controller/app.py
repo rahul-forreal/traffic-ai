@@ -9,7 +9,7 @@ traci = None
 SUMO_REMOTE_PORT = int(os.environ.get('SUMO_REMOTE_PORT', '8873'))
 SUMO_VIEW_ID = None
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Global CORS for frontend at different origin
 @app.after_request
@@ -21,7 +21,7 @@ def add_cors_headers(resp):
 
 # ---------------- Traffic Signal Control (independent of visual) -----------------
 class TrafficController:
-    def _init_(self):
+    def __init__(self):
         self.mode = "MNL"  # MNL fixed-time, VAC adaptive
         self.junctions = { f"J{i}": {"id": f"J{i}", "state": "RED", "queue": 0, "last_change": datetime.now()} for i in range(1,7) }
         self.green_time_mnl = 25
@@ -168,7 +168,7 @@ _start_stepper()
 def signal_control():
     if request.method == 'OPTIONS':
         return ('', 204)
-	data = request.get_json(force=True, silent=True) or {}
+    data = request.get_json(force=True, silent=True) or {}
     if 'mode' in data:
         ok = traffic_controller.set_mode(data['mode'])
         if ok:
@@ -178,7 +178,7 @@ def signal_control():
         return jsonify({ 'ok': True, 'note': 'override endpoint reserved' })
     return jsonify({ 'ok': True })
 
-@app.get('/status')
+@app.route('/status', methods=['GET'])
 def status():
     # Try live queues and TLS state from SUMO; fall back to cached values
     try:
@@ -207,11 +207,11 @@ def status():
     except Exception:
         return jsonify({ 'mode': traffic_controller.mode, 'junctions': list(traffic_controller.junctions.values()), 'source': 'FALLBACK' })
 
-@app.get('/test')
+@app.route('/test', methods=['GET'])
 def test():
     return jsonify({ 'ok': True, 'message': 'Controller is running', 'time': time.time() })
 
-@app.get('/frame')
+@app.route('/frame', methods=['GET'])
 def frame():
     global SUMO_VIEW_ID
     try:
@@ -226,5 +226,5 @@ def frame():
     except Exception as e:
         return jsonify({ 'error': str(e) }), 500
 
-if _name_ == '_main_':
+if __name__ == '__main__':
 	app.run(port=5001, debug=True)

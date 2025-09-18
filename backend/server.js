@@ -94,4 +94,4 @@ app.post('/api/emergency/compare', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 4000;
-server.listen(PORT, () => console.log(Backend running on : ${ PORT }));
+server.listen(PORT, () => console.log(`Backend running on : ${PORT}`));

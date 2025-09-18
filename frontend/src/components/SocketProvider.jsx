@@ -31,7 +31,7 @@ export function SocketProvider({ children }) {
         ];
         events.forEach((evt) =>
             s.on(evt, (data) => {
-                if (typeof data === "string") notify(${ evt }: ${ data });
+                if (typeof data === "string") notify(`${evt}: ${data}`);
             })
         );
 

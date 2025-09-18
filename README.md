@@ -3,7 +3,7 @@
 ## Run Order
 1. One-click (Windows): run go.bat in repo root (see below)
 2. Or manual:
-   - SUMO: sumo-gui -c sumo/city.sumocfg --remote-port 8873
+   - SUMO: sumo-gui -c sumo/city.sumo.cfg --remote-port 8873
    - Controller: cd services/python-controller && python app.py
    - AI: cd services/python-ai && python app.py
    - Backend: cd backend && npm start
@@ -28,7 +28,7 @@ go.bat
 
 
 This opens 5 terminals:
-- SUMO-GUI with city.sumocfg on --remote-port 8873
+- SUMO-GUI with city.sumo.cfg on --remote-port 8873
 - Python controller (port 5001)
 - Python AI (port 5002)
 - Node backend (port 4000)

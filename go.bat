@@ -11,7 +11,7 @@ if defined SUMO_HOME (
 )
 
 REM Launch SUMO GUI (keep window open with /k, auto-start simulation)
-start "SUMO" cmd /k "cd /d %ROOT%sumo && %SUMO_BIN% -c city.sumocfg --remote-port 8873 --delay 350 --start"
+start "SUMO" cmd /k "cd /d %ROOT%sumo && %SUMO_BIN% -c city.sumo.cfg --remote-port 8873 --delay 350 --start"
 
 REM Controller
 start "Controller" cmd /k "cd /d %ROOT%services\python-controller && python app.py"
