@@ -1,0 +1,14 @@
+{
+    "dependencies": {
+        "leaflet": "^1.9.4",
+        "react-router-dom": "^7.9.1",
+        "react-toastify": "^11.0.5",
+        "recharts": "^3.2.1",
+        "socket.io-client": "^4.8.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.21",
+        "postcss": "^8.5.6",
+        "tailwindcss": "^4.1.13"
+    }
+}

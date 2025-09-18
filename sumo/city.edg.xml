@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+	<!-- Horizontal top row -->
+	<edge id="J1-J2" from="J1" to="J2" priority="1" numLanes="2" speed="8.33"/>
+	<edge id="J2-J3" from="J2" to="J3" priority="1" numLanes="2" speed="8.33"/>
+	<edge id="J2-J1" from="J2" to="J1" priority="1" numLanes="2" speed="8.33"/>
+	<edge id="J3-J2" from="J3" to="J2" priority="1" numLanes="2" speed="8.33"/>
+
+	<!-- Horizontal bottom row -->
+	<edge id="J4-J5" from="J4" to="J5" priority="1" numLanes="2" speed="8.33"/>
+	<edge id="J5-J6" from="J5" to="J6" priority="1" numLanes="2" speed="8.33"/>
+	<edge id="J5-J4" from="J5" to="J4" priority="1" numLanes="2" speed="8.33"/>
+	<edge id="J6-J5" from="J6" to="J5" priority="1" numLanes="2" speed="8.33"/>
+
+	<!-- Verticals and back -->
+	<edge id="J1-J4" from="J1" to="J4" priority="1" numLanes="2" speed="8.33"/>
+	<edge id="J2-J5" from="J2" to="J5" priority="1" numLanes="2" speed="8.33"/>
+	<edge id="J3-J6" from="J3" to="J6" priority="1" numLanes="2" speed="8.33"/>
+	<edge id="J4-J1" from="J4" to="J1" priority="1" numLanes="2" speed="8.33"/>
+	<edge id="J5-J2" from="J5" to="J2" priority="1" numLanes="2" speed="8.33"/>
+	<edge id="J6-J3" from="J6" to="J3" priority="1" numLanes="2" speed="8.33"/>
+</edges>
