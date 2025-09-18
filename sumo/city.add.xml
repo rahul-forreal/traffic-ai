@@ -1,4 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <additional>
-	<poi id="hospital" x="105" y="50" color="0,1,0"/>
+	<!-- Hospitals and medical facilities -->
+	<poi id="hospital_main" x="200" y="50" color="1,0,0" type="hospital" name="City General Hospital"/>
+	<poi id="hospital_emergency" x="150" y="50" color="1,0.5,0" type="hospital" name="Emergency Medical Center"/>
+	<poi id="clinic_1" x="50" y="250" color="0.8,0.2,0.2" type="hospital" name="Community Health Clinic"/>
+	<poi id="clinic_2" x="250" y="250" color="0.8,0.2,0.2" type="hospital" name="Family Medical Center"/>
+	
+	<!-- Police stations -->
+	<poi id="police_station_1" x="50" y="50" color="0,0,1" type="police" name="Central Police Station"/>
+	<poi id="police_station_2" x="250" y="50" color="0,0,1" type="police" name="Traffic Police Station"/>
+	
+	<!-- Fire stations -->
+	<poi id="fire_station_1" x="0" y="150" color="1,0.5,0" type="fire" name="Fire Station North"/>
+	<poi id="fire_station_2" x="300" y="150" color="1,0.5,0" type="fire" name="Fire Station South"/>
+	
+	<!-- Schools and educational institutions -->
+	<poi id="school_1" x="50" y="200" color="0,0.8,0" type="school" name="City Public School"/>
+	<poi id="school_2" x="250" y="200" color="0,0.8,0" type="school" name="International School"/>
+	<poi id="college" x="150" y="300" color="0,0.6,0" type="school" name="City College"/>
+	
+	<!-- Shopping and commercial areas -->
+	<poi id="mall_1" x="100" y="100" color="0.8,0.4,0.8" type="shopping" name="City Mall"/>
+	<poi id="market" x="200" y="100" color="0.8,0.4,0.8" type="shopping" name="Local Market"/>
+	<poi id="bank" x="100" y="200" color="0.2,0.6,0.2" type="bank" name="State Bank"/>
+	
+	<!-- Residential areas -->
+	<poi id="residential_1" x="25" y="275" color="0.6,0.6,0.6" type="residential" name="Residential Block A"/>
+	<poi id="residential_2" x="275" y="275" color="0.6,0.6,0.6" type="residential" name="Residential Block B"/>
+	<poi id="residential_3" x="25" y="25" color="0.6,0.6,0.6" type="residential" name="Residential Block C"/>
+	<poi id="residential_4" x="275" y="25" color="0.6,0.6,0.6" type="residential" name="Residential Block D"/>
+	
+	<!-- Bus stops and public transport -->
+	<poi id="bus_stop_1" x="50" y="100" color="0.2,0.2,0.8" type="bus_stop" name="Bus Stop North"/>
+	<poi id="bus_stop_2" x="150" y="100" color="0.2,0.2,0.8" type="bus_stop" name="Bus Stop Center"/>
+	<poi id="bus_stop_3" x="250" y="100" color="0.2,0.2,0.8" type="bus_stop" name="Bus Stop South"/>
+	<poi id="bus_stop_4" x="100" y="200" color="0.2,0.2,0.8" type="bus_stop" name="Bus Stop East"/>
+	<poi id="bus_stop_5" x="200" y="200" color="0.2,0.2,0.8" type="bus_stop" name="Bus Stop West"/>
+	
+	<!-- Fuel stations -->
+	<poi id="petrol_pump_1" x="75" y="150" color="0.8,0.8,0.2" type="fuel" name="Petrol Pump 1"/>
+	<poi id="petrol_pump_2" x="225" y="150" color="0.8,0.8,0.2" type="fuel" name="Petrol Pump 2"/>
+	
+	<!-- Restaurants and food -->
+	<poi id="restaurant_1" x="125" y="150" color="0.8,0.4,0.2" type="restaurant" name="City Restaurant"/>
+	<poi id="restaurant_2" x="175" y="150" color="0.8,0.4,0.2" type="restaurant" name="Local Dhaba"/>
+	
+	<!-- Parks and recreational areas -->
+	<poi id="park_1" x="50" y="300" color="0,0.8,0" type="park" name="City Park"/>
+	<poi id="park_2" x="250" y="300" color="0,0.8,0" type="park" name="Children's Park"/>
 </additional>

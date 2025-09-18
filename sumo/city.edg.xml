@@ -1,22 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
-	<!-- Horizontal top row -->
-	<edge id="J1-J2" from="J1" to="J2" priority="1" numLanes="2" speed="8.33"/>
-	<edge id="J2-J3" from="J2" to="J3" priority="1" numLanes="2" speed="8.33"/>
-	<edge id="J2-J1" from="J2" to="J1" priority="1" numLanes="2" speed="8.33"/>
-	<edge id="J3-J2" from="J3" to="J2" priority="1" numLanes="2" speed="8.33"/>
-
-	<!-- Horizontal bottom row -->
-	<edge id="J4-J5" from="J4" to="J5" priority="1" numLanes="2" speed="8.33"/>
-	<edge id="J5-J6" from="J5" to="J6" priority="1" numLanes="2" speed="8.33"/>
-	<edge id="J5-J4" from="J5" to="J4" priority="1" numLanes="2" speed="8.33"/>
-	<edge id="J6-J5" from="J6" to="J5" priority="1" numLanes="2" speed="8.33"/>
-
-	<!-- Verticals and back -->
-	<edge id="J1-J4" from="J1" to="J4" priority="1" numLanes="2" speed="8.33"/>
-	<edge id="J2-J5" from="J2" to="J5" priority="1" numLanes="2" speed="8.33"/>
-	<edge id="J3-J6" from="J3" to="J6" priority="1" numLanes="2" speed="8.33"/>
-	<edge id="J4-J1" from="J4" to="J1" priority="1" numLanes="2" speed="8.33"/>
-	<edge id="J5-J2" from="J5" to="J2" priority="1" numLanes="2" speed="8.33"/>
-	<edge id="J6-J3" from="J6" to="J3" priority="1" numLanes="2" speed="8.33"/>
+	<!-- Main arterial roads (4-lane highways) -->
+	<!-- North-South arterial roads -->
+	<edge id="J1-J5" from="J1" to="J5" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J5-J9" from="J5" to="J9" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J9-J13" from="J9" to="J13" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J13-J9" from="J13" to="J9" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J9-J5" from="J9" to="J5" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J5-J1" from="J5" to="J1" priority="3" numLanes="4" speed="13.89"/>
+	
+	<edge id="J2-J6" from="J2" to="J6" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J6-J10" from="J6" to="J10" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J10-J14" from="J10" to="J14" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J14-J10" from="J14" to="J10" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J10-J6" from="J10" to="J6" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J6-J2" from="J6" to="J2" priority="3" numLanes="4" speed="13.89"/>
+	
+	<edge id="J3-J7" from="J3" to="J7" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J7-J11" from="J7" to="J11" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J11-J15" from="J11" to="J15" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J15-J11" from="J15" to="J11" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J11-J7" from="J11" to="J7" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J7-J3" from="J7" to="J3" priority="3" numLanes="4" speed="13.89"/>
+	
+	<edge id="J4-J8" from="J4" to="J8" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J8-J12" from="J8" to="J12" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J12-J16" from="J12" to="J16" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J16-J12" from="J16" to="J12" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J12-J8" from="J12" to="J8" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J8-J4" from="J8" to="J4" priority="3" numLanes="4" speed="13.89"/>
+	
+	<!-- East-West arterial roads -->
+	<edge id="J1-J2" from="J1" to="J2" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J2-J3" from="J2" to="J3" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J3-J4" from="J3" to="J4" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J4-J3" from="J4" to="J3" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J3-J2" from="J3" to="J2" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J2-J1" from="J2" to="J1" priority="3" numLanes="4" speed="13.89"/>
+	
+	<edge id="J5-J6" from="J5" to="J6" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J6-J7" from="J6" to="J7" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J7-J8" from="J7" to="J8" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J8-J7" from="J8" to="J7" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J7-J6" from="J7" to="J6" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J6-J5" from="J6" to="J5" priority="3" numLanes="4" speed="13.89"/>
+	
+	<edge id="J9-J10" from="J9" to="J10" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J10-J11" from="J10" to="J11" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J11-J12" from="J11" to="J12" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J12-J11" from="J12" to="J11" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J11-J10" from="J11" to="J10" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J10-J9" from="J10" to="J9" priority="3" numLanes="4" speed="13.89"/>
+	
+	<edge id="J13-J14" from="J13" to="J14" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J14-J15" from="J14" to="J15" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J15-J16" from="J15" to="J16" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J16-J15" from="J16" to="J15" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J15-J14" from="J15" to="J14" priority="3" numLanes="4" speed="13.89"/>
+	<edge id="J14-J13" from="J14" to="J13" priority="3" numLanes="4" speed="13.89"/>
+	
+	<!-- Hospital access roads (2-lane) -->
+	<edge id="J10-H1" from="J10" to="H1" priority="2" numLanes="2" speed="8.33"/>
+	<edge id="H1-J10" from="H1" to="J10" priority="2" numLanes="2" speed="8.33"/>
+	<edge id="J11-H2" from="J11" to="H2" priority="2" numLanes="2" speed="8.33"/>
+	<edge id="H2-J11" from="H2" to="J11" priority="2" numLanes="2" speed="8.33"/>
+	<edge id="H1-H2" from="H1" to="H2" priority="2" numLanes="2" speed="8.33"/>
+	<edge id="H2-H1" from="H2" to="H1" priority="2" numLanes="2" speed="8.33"/>
+	
+	<!-- Residential area roads (1-2 lane) -->
+	<edge id="J5-R1" from="J5" to="R1" priority="1" numLanes="1" speed="5.56"/>
+	<edge id="R1-J5" from="R1" to="J5" priority="1" numLanes="1" speed="5.56"/>
+	<edge id="J7-R2" from="J7" to="R2" priority="1" numLanes="1" speed="5.56"/>
+	<edge id="R2-J7" from="R2" to="J7" priority="1" numLanes="1" speed="5.56"/>
+	<edge id="J9-R3" from="J9" to="R3" priority="1" numLanes="1" speed="5.56"/>
+	<edge id="R3-J9" from="R3" to="J9" priority="1" numLanes="1" speed="5.56"/>
+	<edge id="J11-R4" from="J11" to="R4" priority="1" numLanes="1" speed="5.56"/>
+	<edge id="R4-J11" from="R4" to="J11" priority="1" numLanes="1" speed="5.56"/>
+	
+	<!-- Hospital emergency access -->
+	<edge id="H1-J14" from="H1" to="J14" priority="2" numLanes="2" speed="8.33"/>
+	<edge id="J14-H1" from="J14" to="H1" priority="2" numLanes="2" speed="8.33"/>
+	<edge id="H2-J15" from="H2" to="J15" priority="2" numLanes="2" speed="8.33"/>
+	<edge id="J15-H2" from="J15" to="H2" priority="2" numLanes="2" speed="8.33"/>
 </edges>

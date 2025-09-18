@@ -247,7 +247,7 @@ export default function Driver() {
                                 </div>
                             )}
                         </div>
-                    </div>
+                </div>
                 </div>
             </div>
         </div>

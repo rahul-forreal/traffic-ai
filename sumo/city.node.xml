@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
-	<!-- 2x3 grid for low-end devices: y 100..0, x 0..200 step 100 -->
-	<!-- Row y=100 (J1..J3) -->
-	<node id="J1" x="0" y="100" type="traffic_light"/>
-	<node id="J2" x="100" y="100" type="traffic_light"/>
-	<node id="J3" x="200" y="100" type="traffic_light"/>
-	<!-- Row y=0 (J4..J6) -->
-	<node id="J4" x="0" y="0" type="traffic_light"/>
-	<node id="J5" x="100" y="0" type="traffic_light"/>
-	<node id="J6" x="200" y="0" type="traffic_light"/>
+	<!-- Realistic Indian city road network: 4x4 grid with hospital area -->
+	<!-- Main arterial roads with traffic lights -->
+	<!-- Row y=300 (North) -->
+	<node id="J1" x="0" y="300" type="traffic_light"/>
+	<node id="J2" x="100" y="300" type="traffic_light"/>
+	<node id="J3" x="200" y="300" type="traffic_light"/>
+	<node id="J4" x="300" y="300" type="traffic_light"/>
+	
+	<!-- Row y=200 (North-Central) -->
+	<node id="J5" x="0" y="200" type="traffic_light"/>
+	<node id="J6" x="100" y="200" type="traffic_light"/>
+	<node id="J7" x="200" y="200" type="traffic_light"/>
+	<node id="J8" x="300" y="200" type="traffic_light"/>
+	
+	<!-- Row y=100 (South-Central) -->
+	<node id="J9" x="0" y="100" type="traffic_light"/>
+	<node id="J10" x="100" y="100" type="traffic_light"/>
+	<node id="J11" x="200" y="100" type="traffic_light"/>
+	<node id="J12" x="300" y="100" type="traffic_light"/>
+	
+	<!-- Row y=0 (South) -->
+	<node id="J13" x="0" y="0" type="traffic_light"/>
+	<node id="J14" x="100" y="0" type="traffic_light"/>
+	<node id="J15" x="200" y="0" type="traffic_light"/>
+	<node id="J16" x="300" y="0" type="traffic_light"/>
+	
+	<!-- Hospital area junctions (near J10) -->
+	<node id="H1" x="150" y="50" type="traffic_light"/>
+	<node id="H2" x="250" y="50" type="traffic_light"/>
+	
+	<!-- Residential area junctions -->
+	<node id="R1" x="50" y="250" type="priority"/>
+	<node id="R2" x="250" y="250" type="priority"/>
+	<node id="R3" x="50" y="50" type="priority"/>
+	<node id="R4" x="250" y="50" type="priority"/>
 </nodes>

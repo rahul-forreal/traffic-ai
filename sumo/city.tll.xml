@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- Indian Traffic Light Timing Configuration -->
+    <!-- Main arterial junctions with longer green phases -->
+    
+    <!-- North-South arterial junctions -->
+    <tlLogic id="J1" type="static" programID="0" offset="0">
+        <phase duration="45" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="30" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J2" type="static" programID="0" offset="5">
+        <phase duration="45" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="30" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J3" type="static" programID="0" offset="10">
+        <phase duration="45" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="30" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J4" type="static" programID="0" offset="15">
+        <phase duration="45" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="30" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <!-- Central junctions with balanced timing -->
+    <tlLogic id="J5" type="static" programID="0" offset="20">
+        <phase duration="40" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="35" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J6" type="static" programID="0" offset="25">
+        <phase duration="40" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="35" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J7" type="static" programID="0" offset="30">
+        <phase duration="40" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="35" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J8" type="static" programID="0" offset="35">
+        <phase duration="40" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="35" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <!-- South junctions with shorter green phases -->
+    <tlLogic id="J9" type="static" programID="0" offset="40">
+        <phase duration="35" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="40" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J10" type="static" programID="0" offset="45">
+        <phase duration="35" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="40" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J11" type="static" programID="0" offset="50">
+        <phase duration="35" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="40" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J12" type="static" programID="0" offset="55">
+        <phase duration="35" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="40" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <!-- Bottom row junctions -->
+    <tlLogic id="J13" type="static" programID="0" offset="60">
+        <phase duration="30" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="45" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J14" type="static" programID="0" offset="65">
+        <phase duration="30" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="45" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J15" type="static" programID="0" offset="70">
+        <phase duration="30" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="45" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <tlLogic id="J16" type="static" programID="0" offset="75">
+        <phase duration="30" state="GGGrrrGGGrrr"/>
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <phase duration="45" state="rrrGGGrrrGGG"/>
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+    
+    <!-- Hospital area traffic lights with priority for emergency vehicles -->
+    <tlLogic id="H1" type="static" programID="0" offset="0">
+        <phase duration="25" state="GGrr"/>
+        <phase duration="3" state="yyrr"/>
+        <phase duration="20" state="rrGG"/>
+        <phase duration="3" state="rryy"/>
+    </tlLogic>
+    
+    <tlLogic id="H2" type="static" programID="0" offset="10">
+        <phase duration="25" state="GGrr"/>
+        <phase duration="3" state="yyrr"/>
+        <phase duration="20" state="rrGG"/>
+        <phase duration="3" state="rryy"/>
+    </tlLogic>
+</additional>
